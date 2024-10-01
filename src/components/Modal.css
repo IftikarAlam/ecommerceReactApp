@@ -1,0 +1,41 @@
+/* The overlay that darkens the rest of the screen */
+.modal-overlay {
+  position: fixed; /* Fixes the overlay to the viewport */
+  z-index: 1;
+  top: 0; /* Aligns it to the top of the viewport */
+  left: 0; /* Aligns it to the left of the viewport */
+  right: 0; /* Aligns it to the right of the viewport */
+  bottom: 0; /* Aligns it to the bottom of the viewport */
+  background: rgba(0, 0, 0, 0.5); /* A semi-transparent black background */
+  display: flex; /* Uses flexbox for centering the modal content */
+  align-items: center; /* Centers the modal content vertically */
+  justify-content: center; /* Centers the modal content horizontally */
+}
+
+/* The modal content box */
+.modal-content {
+
+  z-index: 2;
+  background: white; /* White background for the modal content */
+  padding: 20px; /* Adds space inside the modal content */
+  border-radius: 5px; /* Rounds the corners of the modal content */
+  position: relative; /* Allows positioning of child elements (like the close button) */
+  max-width: 500px; /* Sets the maximum width of the modal content */
+  width: 100%; /* Makes the modal content responsive */
+}
+
+/* The close button */
+.modal-close {
+  position: absolute; /* Positions it relative to the modal content */
+  top: 10px; /* 10px from the top of the modal content */
+  right: 10px; /* 10px from the right of the modal content */
+  background: transparent; /* No background color */
+  border: none; /* Removes the default button border */
+  font-size: 20px; /* Makes the close button larger */
+  cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+}
+.modalStyle{
+  max-height:300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}

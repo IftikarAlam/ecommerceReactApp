@@ -1,0 +1,11 @@
+1. Make an array of objects that takes 2 values 1. index/id 2.increment boolian
+
+increment will control a variable called counter / amount
+
+if increment positive then counter++ else vice versa
+
+create an array that has id amount and send it to cart component
+check if array item already exists
+if yes counter++ else counter = 1
+if counter = 0 delete that item
+Finally sum up all the counter/ amount and show it on Total items
